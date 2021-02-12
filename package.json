@@ -1,0 +1,18 @@
+{
+  "name": "know_thyself",
+  "version": "1.0.0",
+  "description": "A template npm project for rendering your ESM code's dependency graph",
+  "main": "src/index.js",
+  "author": "Jeremy Sachs <jeremysachs@rezmason.net>",
+  "scripts": {
+    "roll_it": "mkdir -p bundles; mkdir -p graphs; rollup -c rollup.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "rollup": "^2.39.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.1.1"
+  }
+}
